@@ -1,6 +1,16 @@
-import Header from "./Header" 
+import Header from './Header';
+import Sidebar from './Sidebar';
 
-export default function Facebook() {
-    return (
-<Header></Header>
-    )}
+
+function Facebook() {
+  return (
+    <div className="Header">
+      <Header />
+         <div className="App">
+         <Sidebar />
+         </div>
+      </div>
+  );
+}
+
+export default Facebook;

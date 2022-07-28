@@ -5,11 +5,13 @@ import Container from '@mui/material/Container';
 import Toolbar from '@mui/material/Toolbar';
 import { Avatar } from '@mui/material';
 //a import Link from '@mui/material/Link';
-import Grid from '@mui/material/Grid';
+
 import TextField from '@mui/material/TextField';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
 import EmailIcon from '@mui/icons-material/Email';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import MenuIcon from '@mui/icons-material/Menu';
+
 import PersonIcon from '@mui/icons-material/Person';
 import Badge from '@mui/material/Badge';
 import { styled } from '@mui/material/styles';
@@ -56,27 +58,19 @@ export default function Header() {
       >
     
     <Toolbar align="center">
-      <Typography variant="body2" color="text.secondary" align="center" padding='10px'>
-      {'Copyright © '}
       
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-    <Avatar
-        alt="Remy Sharp"
-        src="https://brandpalettes.com/wp-content/uploads/2018/08/LEGO-Logo-300x300.png?ezimgfmt=ng:webp/ngcb1"
-        sx={{ width: 28, height: 28 }}
-        variant="square"
-        
-/>
+<MenuIcon></MenuIcon>
+      <Typography>Code Differently</Typography>
+    
 <Container>
 <TextField
             hiddenLabel
             id="filled-hidden-label-normal"
             variant="filled"
             label='Search'
-            backgroundColor='#ffffff'
-            borderColor="#ffffff"
+            sx={{backgroundColor:'white', width: 300}}
+            size='small'
+            
           />
           </Container>
           
