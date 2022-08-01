@@ -7,7 +7,6 @@ import { Avatar } from '@mui/material';
 //a import Link from '@mui/material/Link';
 
 import TextField from '@mui/material/TextField';
-import { createTheme } from '@mui/material/styles';
 import EmailIcon from '@mui/icons-material/Email';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -36,13 +35,6 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
   },
 }));
 
-const theme = createTheme({
-  typography: {
-    button: {
-      fontSize: '1rem',
-    },
-  },
-});
 
 export default function Header() {
     return (
