@@ -1,7 +1,7 @@
 import Header from './Header';
 import Rightbar from './Rightbar';
 import Sidebar from './Sidebar';
-import { Grid, Stack } from '@mui/material';
+import { Stack } from '@mui/material';
 
 function Facebook() {
   return (
