@@ -54,12 +54,12 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 function Rightbar(){
     
     return(
-        <Box position="fixed">
+        <Box>
           <Box position="absolute" width={1100}>
            <div style={{display: 'flex', justifyContent:'flex-end'}}>
             <Stack direction="collumn" spacing={20} margin={0}>
              <div className='Rightbar'>
-                <Card position="fixed">
+                
                 <h3>Friends List</h3>
                 <h5>4 Online</h5>
                 <Divider></Divider>
@@ -113,7 +113,7 @@ function Rightbar(){
                </StyledBadge> <Typography margin={1}>View Profile</Typography> <MessageIcon></MessageIcon>
            </ListItem>
 </List>
-                </Card>
+                
              </div>
             </Stack>
            </div>

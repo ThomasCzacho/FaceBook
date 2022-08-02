@@ -43,7 +43,9 @@ export default function Header() {
         position="absolute"
         color="secondary"
         elevation={0}
+        
         sx={{
+          backgroundColor: '#01579b',
           position: 'relative',
           borderTop: (t) => `1px solid ${t.palette.divider}`,
         }}
