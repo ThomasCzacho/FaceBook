@@ -9,21 +9,24 @@ import IconButton from '@mui/material/IconButton';
 import Avatar from '@mui/material/Avatar';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
-import { createTheme } from '@mui/material/styles';
+//import { createTheme } from '@mui/material/styles';
+import Box from '@mui/material/Box';
 
-const theme = createTheme({
-    flexDirection: 'column',
-    justifyContent: 'space-between'
-  });
+// const theme = createTheme({
+//     flexDirection: 'column',
+//     justifyContent: 'space-between'
+//   });
   
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
-function Sidebar(){
+function Rightbar(){
     
     return(
-        
-        <Stack direction="collumn" spacing={20} margin={0}>
-        <div>
+        <Box>
+             <Box position="absolute" width={1100}>
+        <div style={{display: 'flex', justifyContent:'flex-end'}}>
+         <Stack direction="collumn" spacing={20} margin={0}>
+        <div className='Rightbar'>
         <Container maxWidth="sm" >
             <ul className='SidebarList'>
                 {SidebarData.map((val,key)=> {
@@ -50,7 +53,7 @@ function Sidebar(){
             <Switch {...label} defaultChecked />
             </Stack>
             <Grid sx={{ width: 28, height: 428 }}></Grid>
-    <Stack direction="row" spacing={2} margin={2} style={theme}>
+    <Stack direction="row" spacing={2} margin={2} >
     <Avatar>
        <IconButton aria-label="Add">
            <AddIcon />
@@ -62,7 +65,10 @@ function Sidebar(){
         </div>
         
         </Stack>
+        </div>
+        </Box>
+        </Box>
     )
 }
 
-export default Sidebar
+export default Rightbar

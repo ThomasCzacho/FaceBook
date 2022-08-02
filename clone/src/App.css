@@ -1,4 +1,16 @@
-.App {
+.Rightbar {
+   text-align: center;
+  height: 100vw;
+  width: 200vh;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 290px;
+  background-color: rgb(228, 137, 137); 
+  
+
+}
+.Sidebar {
   text-align: center;
   height: 100vw;
   width: 100vh;
@@ -12,5 +24,5 @@
   text-align: center;
   margin: 0;
   padding: 0;
-
+scroll-snap-align: start;
 }

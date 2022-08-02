@@ -1,9 +1,9 @@
 import Typography from '@mui/material/Typography';
 import AppBar from '@mui/material/AppBar';
-//a import Box from '@mui/material/Box';
+import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Toolbar from '@mui/material/Toolbar';
-import { Avatar } from '@mui/material';
+import { Avatar, Grid } from '@mui/material';
 //a import Link from '@mui/material/Link';
 
 import TextField from '@mui/material/TextField';
@@ -38,6 +38,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
 export default function Header() {
     return (
+     
         <AppBar
         position="absolute"
         color="secondary"
@@ -95,5 +96,6 @@ export default function Header() {
          
     </Toolbar>
     </AppBar>
+    
     )
 }
