@@ -55,7 +55,8 @@ export default function Header() {
     <Toolbar align="center">
       
 <MenuIcon></MenuIcon>
-      <Typography>Code Differently</Typography>
+      
+      <Avatar sx={{ width: 90, height: 30 }} src='https://codedifferently.com/wp-content/uploads/2020/06/Code-Differently-logo-2020-2.png' variant='square'> </Avatar>
     
 <Container>
 <TextField
