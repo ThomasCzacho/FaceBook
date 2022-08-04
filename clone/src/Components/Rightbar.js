@@ -56,7 +56,7 @@ function Rightbar(){
     
     return(
         <Box>
-          <Box position="absolute" width={1050}>
+          <Box position="absolute" >
            <div style={{display: 'flex', justifyContent:'flex-end'}}>
             <Stack direction="collumn" spacing={20} margin={0}>
              <div className='Rightbar'>
